@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Hls from "hls.js";
 
-const HLS_URL = "https://stream.edgewoodbaptchurch.com/live/service";
+const HLS_URL = "https://stream.edgewoodbaptchurch.com/live/service/";
 
 // Put your stats endpoint here later (example):
 // const STATS_URL = "https://stats.edgewoodbaptchurch.com/now";
