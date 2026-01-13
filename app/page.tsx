@@ -9,15 +9,8 @@ const HLS_URL = "https://stream.edgewoodbaptchurch.com/hls/service.m3u8";
 // const STATS_URL = "https://stats.edgewoodbaptchurch.com/now";
 const STATS_URL: string | null = null;
 
-// Chat embed (initial simple approach)
-// Option 1: Discord widget (server settings must allow it)
-// const CHAT_IFRAME_URL = "https://discord.com/widget?id=YOUR_SERVER_ID&theme=light";
+const CHAT_IFRAME_URL = "https://chat.edgewoodbaptchurch.com/channel/Sunday-Chat";
 
-// Option 2: YouTube Live Chat (if you also stream to YouTube)
-// const CHAT_IFRAME_URL = "https://www.youtube.com/live_chat?v=VIDEO_ID&embed_domain=live.edgewoodbaptchurch.com";
-
-// For now, we’ll show a “chat coming soon” panel until you pick one:
-const CHAT_IFRAME_URL: string | null = null;
 
 type LiveState = "loading" | "live" | "offline" | "error";
 
