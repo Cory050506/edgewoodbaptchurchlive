@@ -3,13 +3,13 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Hls from "hls.js";
 
-const HLS_URL = "https://stream.edgewoodbaptchurch.com/hls/service.m3u8";
+const HLS_URL = "https://stream.edgewoodbaptchurch.com/live/service";
 
 // Put your stats endpoint here later (example):
 // const STATS_URL = "https://stats.edgewoodbaptchurch.com/now";
 const STATS_URL: string | null = null;
 
-const CHAT_IFRAME_URL = "https://chat.edgewoodbaptchurch.com/channel/Sunday-Chat";
+const CHAT_IFRAME_URL = "https://chat.edgewoodbaptchurch.com/channel/Sunday-Chat/?layout=embedded";
 
 
 type LiveState = "loading" | "live" | "offline" | "error";
