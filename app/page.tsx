@@ -188,7 +188,7 @@ export default function Page() {
     <main className="container">
       <header className="header">
         <div className="brand">
-          <div className="logo">EBC</div>
+          <img src="logo.png" alt="Edgewood Baptist Church Logo" className="logo" />
           <div className="titleWrap">
             <h1 className="title">Edgewood Baptist Church</h1>
             <p className="subtitle">Live Stream • {statusText}</p>
