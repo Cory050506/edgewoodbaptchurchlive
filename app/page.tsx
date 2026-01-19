@@ -209,28 +209,12 @@ export default function Page() {
         <section className="card videoWrap">
           {liveState === "offline" ? (
             <div className="offlineBox">
-              <h2 className="offlineTitle">We’re not live right now</h2>
+              <h2 className="offlineTitle">We’re not live right now. Check back on Sundays at 10:45 AM and/or 6 PM to catch a service!</h2>
               <div className="heroLine">
                 <span className="pill">This page auto-refreshes every 15 seconds</span>
-                <span className="pill">Try again when service starts</span>
               </div>
 
-              <div className="controlsRow" style={{ marginTop: 6 }}>
-                <button className="btn btnPrimary" onClick={initPlayer} type="button">
-                  Refresh / Retry
-                </button>
-                <a className="btn" href={HLS_URL} target="_blank" rel="noreferrer">
-                  Open stream link
-                </a>
-                <a className="btn" href="https://edgewoodbaptchurch.com">
-                  Back to main site
-                </a>
-              </div>
-
-              <p className="note">
-                Tip: iPhone/iPad Safari works best for HLS. On desktop, Chrome/Edge should work
-                here too.
-              </p>
+              
             </div>
           ) : (
             <>
@@ -238,13 +222,10 @@ export default function Page() {
 
               <div className="controlsRow" style={{ padding: "14px" }}>
                 <button className="btn btnPrimary" onClick={initPlayer} type="button">
-                  Refresh Player
+                  Refresh Player (if having issues)
                 </button>
-                <a className="btn" href="https://edgewoodbaptchurch.com">
-                  Back to main website
-                </a>
                 <a className="btn" href={HLS_URL} target="_blank" rel="noreferrer">
-                  Open stream link
+                  Open link in new tab
                 </a>
               </div>
 
@@ -258,16 +239,9 @@ export default function Page() {
         {/* RIGHT: Info + Chat */}
         <aside className="card">
           <div className="cardPad">
-            <h3 className="cardTitle">Service Info</h3>
+            
 
-            <div className="kv">
-              <div className="kvRow">
-                <span className="kvLabel">Direct HLS</span>
-                <a className="kvValue" href={HLS_URL} target="_blank" rel="noreferrer">
-                  Open playlist
-                </a>
-              </div>
-            </div>
+            
 
             <div className="controlsRow" style={{ marginTop: 12 }}>
               <a className="btn" href="https://edgewoodbaptchurch.com">

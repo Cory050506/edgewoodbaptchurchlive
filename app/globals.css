@@ -53,8 +53,6 @@ button{font:inherit}
 .logo{
   width:46px;height:46px;border-radius:14px;
   display:grid;place-items:center;
-  background: linear-gradient(135deg, rgba(106,167,255,.85), rgba(139,92,246,.85));
-  font-weight:800; letter-spacing:.5px;
   box-shadow: 0 12px 26px rgba(106,167,255,.18);
 }
 .titleWrap{display:flex;flex-direction:column;gap:3px}
