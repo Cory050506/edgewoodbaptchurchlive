@@ -214,6 +214,11 @@ export default function Page() {
                 <span className="pill">This page auto-refreshes every 15 seconds</span>
               </div>
 
+<div className="controlsRow" style={{ marginTop: 6 }}>
+                <button className="btn btnPrimary" onClick={initPlayer} type="button">
+                  Refresh / Retry
+                </button>
+              </div>
               
             </div>
           ) : (
